@@ -95,9 +95,58 @@
        }
     }
 
-    @media only screen and (max-width: 480px){
+    @media only screen and (max-width: 490px){
        .container {
            width: 100%;
+       }
+       /* Thank you for shopping */
+       .thank-you__header {
+        padding-bottom: 35px !important;
+       }
+       .thank-you .header {
+        font-size: 40px !important;
+        line-height: 45px !important;
+       }
+       .thank-you .order {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        padding-bottom: 55px !important;
+       }
+       .thank-you .order p {
+        font-size: 20px !important;
+        line-height: 30px !important;
+       }
+       /* Item Section */
+       .image-column {
+        width: 100% !important;
+       }
+       .image-column .item-image {
+        width: 100% !important;
+        max-width: 65% !important;
+       }
+       .item-break-down,
+       .total-price {
+        width: 100% !important;
+        max-width: 400px !important;
+        display: block;
+       }
+       .item-break-down .info-column,
+       .total-price .info-column{
+        width: 400px !important;
+        padding-left: 50px !important;
+        padding-right: 50px !important;
+       }
+       /* Order Status */
+       .help-center-wrapper {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+       }
+       .help-center-wrapper .description {
+        font-size: 20px !important;
+        line-height: 30px !important;
+       }
+       .learn-more-wrapper {
+
        }
     }
 </style>
@@ -145,8 +194,8 @@
                             <td class="thank-you padding" align="center" valign="top" style="padding: 0;">
                                 <table role="presentation" width="100%" align="center" border="0" border-spacing="0" cellpadding="0" cellspacing="0">
                                     <tr>
-                                        <td align="center" valign="top" style="padding: 60px 0 40px 0">
-                                            <p style="line-height: 60px; color: #000000; font-size: 50px; font-weight: 800;">
+                                        <td class="thank-you__header" align="center" valign="top" style="padding: 60px 0 40px 0">
+                                            <p class="header" style="line-height: 60px; color: #000000; font-size: 50px; font-weight: 800;">
                                                 Thank you for <br>
                                                 shopping <br>
                                                 at Patagonia
@@ -405,19 +454,19 @@
                                     <tr>
                                         <td align="center" valign="top" style="padding: 0">
                                             <!-- Image Column -->
-                                            <table role="presentation" width="100%" align="left" border="0" border-spacing="0" cellpadding="0" cellspacing="0" width="220px" style="width: 220px;">
+                                            <table class="image-column" role="presentation" width="100%" align="left" border="0" border-spacing="0" cellpadding="0" cellspacing="0" width="220px" style="width: 220px;">
                                                 <tr>
-                                                    <td align="center" valign="top" style="padding: 0; font-size: 0;">
-                                                        <img src="img/patagonia-product_shorts.jpeg" alt="Shorts" style="width: 100%;max-width: 100%; height: auto;">
+                                                    <td  align="center" valign="top" style="padding: 0; font-size: 0;">
+                                                        <img class="item-image" src="img/patagonia-product_shorts.jpeg" alt="Shorts" style="width: 100%;max-width: 100%; height: auto;">
                                                     </td>
                                                 </tr>
                                             </table>
                                             <!-- /Image Column -->
 
                                             <!-- Break-Down Column -->
-                                            <table role="presentation" width="100%" align="left" border="0" border-spacing="0" cellpadding="0" cellspacing="0" width="280px" style="width: 280px;">
+                                            <table class="item-break-down" role="presentation" width="100%" align="left" border="0" border-spacing="0" cellpadding="0" cellspacing="0" width="280px" style="width: 280px;">
                                                 <tr>
-                                                    <td align="center" valign="top" style="padding: 40px 0 0 0;">
+                                                    <td class="info-column" align="center" valign="top" style="padding: 40px 0 0 0;">
                                                         <h4 style="color: #000000; font-size: 18px; line-height: 24px; text-align: left; margin: 0;">M's Baggies™ Naturals</h4>
                                                         <p style="color: #666666; font-size: 16px; line-height: 22px; text-align: left; margin: 0;">#58056</p>
                                                         <p style="color: #000000; font-size: 16px; line-height: 22px; text-align: left; margin: 0; font-weight: 600;">
@@ -431,9 +480,9 @@
                                             <!-- /Break-Down Column -->
 
                                              <!-- Price Column -->
-                                             <table role="presentation" width="100%" align="left" border="0" border-spacing="0" cellpadding="0" cellspacing="0" width="100px" style="width: 100px;">
+                                             <table class="total-price" role="presentation" width="100%" align="left" border="0" border-spacing="0" cellpadding="0" cellspacing="0" width="100px" style="width: 100px;">
                                                 <tr>
-                                                    <td align="center" valign="top" style="padding: 40px 20px 0 0;">
+                                                    <td class="info-column" align="center" valign="top" style="padding: 40px 20px 0 0;">
                                                         <h4 style="color: #000000; font-size: 18px; line-height: 24px; text-align: right; margin: 0;">$59.00</h4>
                                                     </td>
                                                 </tr>
@@ -517,7 +566,7 @@
                                                 <!-- Top Row -->
                                                 <tr>
                                                     <td align="center" valign="top" style="padding: 0; padding-bottom: 30px;">
-                                                        <p style="color: #000000; font-size: 16px; line-height: 26px; text-align: center; margin: 0; font-weight: 600;">
+                                                        <p class="description" style="color: #000000; font-size: 16px; line-height: 26px; text-align: center; margin: 0; font-weight: 600;">
                                                             Items from your order may ship from different locations and use different shipping methods. See <a href="#" style="text-decoration: none; color: #EF4923;">Changes, Shipments and Payments</a> for more information about authorizations and charges.
                                                         </p>
                                                     </td>
@@ -527,7 +576,7 @@
                                                 <!-- Bottom Row -->
                                                 <tr>
                                                     <td align="center" valign="top" style="padding: 0;">
-                                                        <p style="color: #000000; font-size: 16px; line-height: 26px; text-align: center; margin: 0; font-weight: 600;">
+                                                        <p class="description" style="color: #000000; font-size: 16px; line-height: 26px; text-align: center; margin: 0; font-weight: 600;">
                                                             Have a question? We can help. Visit our <a href="#" style="text-decoration: none; color: #EF4923;">Help Center</a> for answers and assistance. Please include your order number (<a href="#" style="text-decoration: none; color: #EF4923;">US65005000</a>) in all correspondence.
                                                         </p>
                                                     </td>
