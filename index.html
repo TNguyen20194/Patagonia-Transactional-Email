@@ -116,6 +116,45 @@
         font-size: 20px !important;
         line-height: 30px !important;
        }
+       /* Sign Up */
+       .sign-up {
+        background-color: #ffffff !important; 
+        padding-right: 20px !important;
+        padding-left: 20px !important;
+       }
+         /* Order Detail */
+       .order-details {
+        background-color: #ffffff !important;
+        padding-right: 20px !important;
+        padding-left: 20px !important;
+       }
+       .order-details .padding {
+        padding-top: 25px !important;
+        padding-bottom: 25px !important;
+       }
+       .order-details .content {
+        width: 100% !important;
+        display: block !important;
+       }
+       .order-details .hide {
+        display: none !important;
+       }
+       .content .top-row {
+        padding-bottom: 25px !important;
+       }
+       .content .bottom-row {
+        padding-top: 25px !important;
+        border-top: 1px solid #d4d4d4 ;
+       }
+       .content .padding-bottom {
+        width: 400px !important;
+        padding-bottom: 25px !important;
+       }
+       .content .border-top {
+        width: 400px !important;
+        padding-top: 25px !important;
+        border-top: 1px solid #d4d4d4 ;
+       }
        /* Item Section */
        .image-column {
         width: 100% !important;
@@ -149,7 +188,10 @@
         font-size: 20px !important;
         line-height: 30px !important;
        }
-       .learn-more-wrapper {
+       /* Divider */
+       .divider {
+        padding-right: 20px !important;
+        padding-left: 20px !important;
        }
        /* Order Summary */
        .order-summary, .order-cost {
@@ -170,6 +212,13 @@
        .learn-more .column {
         width: 100% !important;
         display: block !important;
+       }
+       /* Footer */
+       .help-center {
+        display: block !important;
+       }
+       .vertical-divider {
+        display: none !important;
        }
     }
 </style>
@@ -246,7 +295,7 @@
                         <!-- ==========>> Start of Sign Up Box <<==========  -->
                         <tr>
                             <td class="sign-up" align="center" valign="top" style="padding: 10px 10px 10px 10px; background-color: #F5F5F5;">
-                                <table role="presentation" width="100%" align="center" border="0" border-spacing="0" cellpadding="0" cellspacing="0">
+                                <table role="presentation" width="100%" align="center" border="0" border-spacing="0" cellpadding="0" cellspacing="0" style="background-color: #F5F5F5;">
                                     <tr>
                                         <td class="padding" align="center" valign="top" style="padding: 10px 10px 10px 10px">
                                             <table role="presentation" width="100%" align="center" border="0" border-spacing="0" cellpadding="0" cellspacing="0">
@@ -281,15 +330,15 @@
 
                         <!-- ==========>> Start of Order Details <<==========  -->
                         <tr>
-                            <td align="center" valign="top" style="padding: 0; background-color: #F5F5F5;">
-                                <table class="wrapper" role="presentation" width="100%" align="center" border="0" border-spacing="0" cellpadding="0" cellspacing="0">
+                            <td class="order-details" align="center" valign="top" style="padding: 0; background-color: #F5F5F5;">
+                                <table class="container" role="presentation" width="100%" align="center" border="0" border-spacing="0" cellpadding="0" cellspacing="0" style="background-color: #F5F5F5;">
                                     <tr>
                                         <td class="padding" align="center" valign="top" style="padding: 30px 20px 30px 20px;">
                                             <table role="presentation" width="100%" align="center" border="0" border-spacing="0" cellpadding="0" cellspacing="0">
                                                 <tr>
                                                     <td class="column" align="center" valign="top" style="padding: 0;">
                                                         <!-- Left Column -->
-                                                        <table role="presentation" width="33.33%" align="left" border="0" border-spacing="0" cellpadding="0" cellspacing="0">
+                                                        <table class="content" role="presentation" width="33.33%" align="left" border="0" border-spacing="0" cellpadding="0" cellspacing="0">
                                                             <!-- Order No. Row -->
                                                             <tr>
                                                                 <td class="top-row" align="center" valign="top" style="padding: 0;">
@@ -321,15 +370,15 @@
                                                             <!-- /Blank Space -->
                                                             <!-- Shipping Address -->
                                                             <tr>
-                                                                <td class="bottom-row" align="center" valign="top" style="padding: 0">
+                                                                <td class="bottom-row padding-bottom" align="center" valign="top" style="padding: 0">
                                                                     <table role="presentation" width="100%" align="center" border="0" border-spacing="0" cellpadding="0" cellspacing="0">
                                                                         <tr>
                                                                             <td align="center" valign="top" style="padding: 0"> 
                                                                                 <p style="color: #333333; font-size: 15px;line-height: 22px; text-align: left; font-weight: 800; margin: 0;">Shipping Address</p>
                                                                                 <p style="color: #333333; font-size: 15px;line-height: 22px; text-align: left; font-weight: 600; margin: 0;">
-                                                                                    Smiles Davis
-                                                                                    600 Montgomery St
-                                                                                    San Francisco, CA
+                                                                                    Smiles Davis <br>
+                                                                                    600 Montgomery St <br>
+                                                                                    San Francisco, CA <br>
                                                                                     94111 United States 
                                                                                 </p>
                                                                             </td>
@@ -342,10 +391,10 @@
                                                         <!-- /Left Column -->
 
                                                         <!-- Middle Column -->
-                                                        <table role="presentation" width="33.33%" align="left" border="0" border-spacing="0" cellpadding="0" cellspacing="0">
+                                                        <table class="content" role="presentation" width="33.33%" align="left" border="0" border-spacing="0" cellpadding="0" cellspacing="0">
                                                             <!-- Order Date Row -->
                                                             <tr>
-                                                                <td align="center" valign="top" style="padding: 0">
+                                                                <td class="top-row border-top" align="center" valign="top" style="padding: 0">
                                                                     <table role="presentation" width="100%" align="center" border="0" border-spacing="0" cellpadding="0" cellspacing="0">
                                                                         <tr>
                                                                             <td align="center" valign="top" style="padding: 0">
@@ -374,16 +423,16 @@
                                                             <!-- /Blank Space -->
                                                             <!-- Billing Address -->
                                                             <tr>
-                                                                <td class="bottom-row" align="center" valign="top" style="padding: 0">
+                                                                <td class="bottom-row padding-bottom" align="center" valign="top" style="padding: 0">
                                                                     <table role="presentation" width="100%" align="center" border="0" border-spacing="0" cellpadding="0" cellspacing="0">
                                                                         <tr>
                                                                             <td align="center" valign="top" style="padding: 0">
                                                                                 <p style="color: #333333; font-size: 15px;line-height: 22px; text-align: left; font-weight: 800; margin: 0;">Billing Address</p>
                                                                                 <p style="color: #333333; font-size: 15px;line-height: 22px; text-align: left; font-weight: 600; margin: 0;">
-                                                                                    Smiles Davis
-                                                                                    600 Montgomery St
-                                                                                    San Francisco, CA
-                                                                                    94111 United States 
+                                                                                    Smiles Davis <br>
+                                                                                    600 Montgomery St <br>
+                                                                                    San Francisco, CA <br>
+                                                                                    94111 United States
                                                                                 </p>
                                                                             </td>
                                                                         </tr>
@@ -395,13 +444,13 @@
                                                         <!-- /Middle Column -->
 
                                                          <!-- Right Column -->
-                                                         <table role="presentation" width="33.33%" align="left" border="0" border-spacing="0" cellpadding="0" cellspacing="0">
+                                                         <table class="content" role="presentation" width="33.33%" align="left" border="0" border-spacing="0" cellpadding="0" cellspacing="0">
                                                             <!-- Shipping Method Row -->
                                                             <tr>
                                                                 <td>
                                                                     <table role="presentation" width="100%" align="center" border="0" border-spacing="0" cellpadding="0" cellspacing="0">
                                                                         <tr>
-                                                                            <td align="center" valign="top" style="padding: 0">
+                                                                            <td class="top-row border-top" align="center" valign="top" style="padding: 0">
                                                                                 <p style="color: #333333; font-size: 15px;line-height: 22px; text-align: left; font-weight: bold; margin: 0;">
                                                                                     Shipping Method</p>
                                                                                 <p style="color: #EF4923; font-size: 15px;line-height: 22px; text-align: left; font-weight: 600; margin: 0;">
@@ -517,11 +566,24 @@
                             </td>
                         </tr>
                         <!-- ==========>> End of Item <<==========  -->
+                        <!-- ==========>> Divider <<==========  -->
+                        <tr>
+                            <td class="divider" align="center" valign="top" style="padding: 0">
+                                <table role="presentation" width="100%" align="center" border="0" border-spacing="0" cellpadding="0" cellspacing="0" style="width: 100%;">
+                                    <tr>
+                                        <td align="center" valign="top" style="padding: 5px 0 5px 0; border-top: 1px solid #cccccc;">
+                                        </td>
+                                    </tr>
+
+                                </table>
+                            </td>
+                        </tr>
+                        <!-- ==========>> Dividder <<==========  -->  
 
                         <!-- ==========>> Start of Order Summary <<==========  -->
                         <tr>
                             <td align="center" valign="top" style="padding: 0; padding-bottom: 60px;">
-                                <table class="order" role="presentation" width="100%" align="center" border="0" border-spacing="0" cellpadding="0" cellspacing="0" style="border-top: 1px solid #cccccc;">
+                                <table class="order" role="presentation" width="100%" align="center" border="0" border-spacing="0" cellpadding="0" cellspacing="0">
                                     <tr>
                                         <td align="center" valign="top" style="padding: 40px 0 0 0;">
                                            <table class="order-summary" role="presentation" width="80%" align="left" border="0" border-spacing="0" cellpadding="0" cellspacing="0" style="width: 80%; max-width: 100%;">
@@ -770,7 +832,7 @@
                                     <tr>
                                         <td align="center" valign="top" style="padding: 10px 0 25px 0; font-size: 0; background-color: #ffffff; width: 100%;" width="100%">
                                             <p style="color: #333333; font-size: 14px; line-height: 20px; text-align: center; margin: 0; font-weight: 600; text-align: center;">
-                                                8550 White Fir St., Reno, NV 89523 | <a href="#" style="text-decoration: underline; color: #333333;">Help Center</a>
+                                                8550 White Fir St., Reno, NV 89523 <span class="vertical-divider">| </span><a href="#" class="help-center" style="text-decoration: underline; color: #333333;">Help Center</a>
                                             </p>
                                         </td>
                                     </tr>
