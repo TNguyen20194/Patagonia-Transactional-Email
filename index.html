@@ -91,13 +91,13 @@
     /* Mobile */
     @media only screen and (max-width: 600px){
        .container {
-           width: 100%;
+           width: 100% !important;
        }
     }
 
     @media only screen and (max-width: 490px){
        .container {
-           width: 100%;
+           width: 320px !important;
        }
        /* Thank you for shopping */
        .thank-you__header {
@@ -121,6 +121,9 @@
         background-color: #ffffff !important; 
         padding-right: 20px !important;
         padding-left: 20px !important;
+       }
+       .sign-up__cta {
+        display: block !important;
        }
          /* Order Detail */
        .order-details {
@@ -302,7 +305,7 @@
                                                 <tr>
                                                     <td align="center" valign="top" style="padding: 20px 20px 20px 20px">
                                                         <p style="line-height: 22px; color: #000000; font-size: 15px; font-weight: 800;">
-                                                            Get text updates about your delivery. <a href="#" style="color: #000000;"><span style="text-decoration: underline;">Sign Up</span></a>
+                                                            Get text updates about your delivery. <a href="#" style="color: #000000;"><span class="sign-up__cta" style="text-decoration: underline;">Sign Up</span></a>
                                                         </p>
                                                     </td>
                                                 </tr>
